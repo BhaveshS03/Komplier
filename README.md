@@ -17,7 +17,6 @@ Current implementation status of the compiler components below:
 * [ ] **Basic Arithmetic**: Support for addition and operator precedence.
 * [ ] **IR Generation**: Generating Three-Address Code, mostly for LLVM (Planned)
 
----
 
 ## The Pipeline (Expected)
 
@@ -28,7 +27,6 @@ The compiler follows the classic front-end architecture:
 3. **Symbol Table:** Manages memory addresses and variable scopes. 
 4. **Interpreter/CodeGen:** Evaluates the Abstract Syntax Tree (AST) or generates output.
 
----
 
 ## Grammar Rules
 
@@ -39,10 +37,8 @@ S  -> id = E | print ( E )
 E  -> T E'
 E' -> + T E' | ε
 T  -> id | num | ( E )
-
 ```
 
----
 
 ## Getting Started
 
@@ -71,7 +67,6 @@ Run the Parser:
 
 ```
 
----
 
 ## 📂 Project Structure
 
@@ -80,5 +75,3 @@ Run the Parser:
 * `src/parser.c` — Implementation of the CFG rules.
 * `include/` — Header files (`.h`) for definitions and structures.
 * `examples/` — Sample code snippets in the custom language.
-
----
