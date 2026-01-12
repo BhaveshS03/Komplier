@@ -1,0 +1,1 @@
+void parse(char *input, int *pos);
